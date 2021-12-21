@@ -36,5 +36,6 @@ def get_player_status():
         dic[team]['total'] = re.findall('(\d{1,2}\.\d{1,2})', str(d[x + 6]))[0]
 
     return dic
-    # df = pd.DataFrame(dic)
-    # print(df.head())
+#     df = pd.DataFrame(dic)
+#     print(df.head())
+# get_player_status()

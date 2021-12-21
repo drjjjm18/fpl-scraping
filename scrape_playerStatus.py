@@ -18,5 +18,6 @@ def get_player_status():
     data = requests.get(data_url)
     csv_data = StringIO(data.text)
     return csv_data
-    # df = pd.read_csv(csv_data)
-    # print(df.head())
+#     df = pd.read_csv(csv_data)
+#     print(df.head())
+# get_player_status()
