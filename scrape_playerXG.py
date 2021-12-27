@@ -10,10 +10,10 @@ def get_player_xg():
 
     page = requests.get(URL)
     soup = BeautifulSoup(page.content, 'html.parser')
-
     json_data = str(soup.find_all('script')[3]).split("'")[1].encode('utf8').decode('unicode_escape')
 
     return json_data
-#     df = pd.read_json(json_data)
-#     print(df.head())
-# get_player_xg()
+
+
+# data = get_player_xg()
+# print(pd.read_json(data).head())
